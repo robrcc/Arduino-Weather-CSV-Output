@@ -10,8 +10,12 @@ speed = 9600
 def process_reading(reading_raw):
 	# split into list of values
 	reading = reading_raw.split(",")
-	# use however needed. remember to convert values to floats as needed.
 	print(reading)
+
+	# use however needed. remember to convert values to floats as needed. ex:
+	tempC = float(reading[0])
+	if tempC <= 0:
+		print("It's freezing!")
 	
 	
 def main():
